@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\CadastroControllers;
 use Illuminate\Support\Facades\Route;
+//rota do bd
+use App\Http\Controllers\ProductController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +20,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/cadastros', [CadastroControllers::class, 'index']);
+
+//Route db conection
+Route::resource('/products', ProductController::class);
