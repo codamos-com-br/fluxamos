@@ -21,8 +21,14 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
+                <strong>saldo</strong>
+                {{ $product->saldo }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
                 <strong>Details:</strong>
-                {{ $product->detail }}
+                {{ $product->details }}
             </div>
         </div>
     </div>

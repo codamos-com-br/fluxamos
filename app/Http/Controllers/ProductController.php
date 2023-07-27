@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
+//use Illuminate\Http\Response;
 use Illuminate\View\View;
   
 class ProductController extends Controller
@@ -36,7 +36,9 @@ class ProductController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'detail' => 'required',
+            'saldo'=> 'required',
+            'details' => 'required'
+
         ]);
         
         Product::create($request->all());
@@ -68,7 +70,7 @@ class ProductController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'detail' => 'required',
+            'details' => 'required',
         ]);
         
         $product->update($request->all());

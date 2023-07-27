@@ -33,14 +33,24 @@
                 <input type="text" name="name" class="form-control" placeholder="Name">
             </div>
         </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <strong>Saldo Inicial:</strong>
+            <input type="number" name="saldo" class="form-control" placeholder="R$1.000,00">
+        </div>
+        
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Detail:</strong>
-                <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail"></textarea>
+                <strong>Observação:</strong>
+                <textarea class="form-control" style="height:150px" name="details" placeholder="Digite alguma observação sobre essa atividade, por favor!"></textarea>
             </div>
         </div>
+        
+
+        
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                
+            <button type="submit" class="btn btn-primary">Salvar</button>
         </div>
     </div>
    
