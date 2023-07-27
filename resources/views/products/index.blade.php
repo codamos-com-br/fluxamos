@@ -31,7 +31,7 @@
             <!--<td>{{ $product->id }}</td>-->
             <td>{{ $product->name }}</td>
             <td>{{ $product->saldo }}</td>
-            <td>{{ $product->details }}</td>
+            <td>{{ $product->detailss }}</td>
             
             <td>
                 <form action="{{ route('products.destroy',$product->id) }}" method="POST">
