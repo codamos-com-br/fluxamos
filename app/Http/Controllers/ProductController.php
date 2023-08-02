@@ -35,9 +35,9 @@ class ProductController extends Controller
     public function store(Request $request): RedirectResponse
     {
         $request->validate([
-            'name' => 'required',
-            'saldo'=> 'required',
-            'details' => 'required'
+            'name'      => 'required',
+            'saldo'     => 'required',
+            'details'   => 'required'
 
         ]);
         
