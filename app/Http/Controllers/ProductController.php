@@ -7,6 +7,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 //use Illuminate\Http\Response;
 use Illuminate\View\View;
+use Carbon\Carbon;
   
 class ProductController extends Controller
 {
@@ -37,8 +38,7 @@ class ProductController extends Controller
         $request->validate([
             'name'      => 'required',
             'saldo'     => 'required',
-            'details'   => 'required'
-
+            
         ]);
         
         Product::create($request->all());
