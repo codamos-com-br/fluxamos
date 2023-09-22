@@ -26,4 +26,11 @@ class ContaFormRequest extends FormRequest
             'saldo'     => ['required','min:4']
         ];
     }
+
+    public function messages(){
+        return [
+            'name.*'    => 'O campo nome é obrigatorio e precisa de  pelo menos 3 letras',
+            'saldo.*'   => 'O campo saldo é obrigatorio digitar no minimo 4 números'
+        ];
+    }
 }
