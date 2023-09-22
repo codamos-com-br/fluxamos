@@ -18,10 +18,9 @@ use App\Http\Controllers\ProductController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/products');
 });
 
-Route::get('/cadastros', [CadastroControllers::class, 'index']);
 
 //Route db conection
 Route::resource('/products', ProductController::class);
