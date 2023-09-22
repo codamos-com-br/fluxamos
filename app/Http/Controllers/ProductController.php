@@ -2,6 +2,7 @@
   
 namespace App\Http\Controllers;
   
+use App\Http\Requests\ContaFormRequest;
 use App\Models\Product;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -35,13 +36,9 @@ class ProductController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request): RedirectResponse
+    public function store(ContaFormRequest $request): RedirectResponse
     {
-        $request->validate([
-            'name'      => 'required',
-            'saldo'     => 'required',
-            
-        ]);
+       
         
         Product::create($request->all());
          
@@ -68,13 +65,9 @@ class ProductController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Product $product): RedirectResponse
+    public function update(ContaFormRequest $request, Product $product): RedirectResponse
     {
-        $request->validate([
-            'name' => 'required',
-            'details' => 'required',
-        ]);
-        
+                
         $product->update($request->all());
         
         return redirect()->route('products.index')
