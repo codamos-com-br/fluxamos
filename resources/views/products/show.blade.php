@@ -8,8 +8,11 @@
             </div>
             <div class="pull-right">
                 <a class="btn btn-primary" href="{{ route('products.index') }}"> Voltar</a>
+
+                <a class="btn btn-secondary" href="{{ route('products.edit',$product->id) }}">Movimentar a conta</a>
             </div>
         </div>
+        
     </div>
    
     <div class="row">
@@ -25,6 +28,7 @@
                 <!--{{ $product->saldo }}-->
                 {{'R$ '.number_format($product->saldo, 2, ',', '.') }}
             </div>
+                        
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">

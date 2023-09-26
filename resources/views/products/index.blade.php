@@ -36,13 +36,13 @@
                 <form action="{{ route('products.destroy',$product->id) }}" method="POST">
    
                     <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Informações da conta</a>
-    
-                    <!--<a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">Edit</a>-->
+                
+                    <!--<a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">Edit</a>
    
-                    <!--@csrf-->
-                    <!--@method('DELETE')-->
+                    @csrf
+                    @method('DELETE')
       
-                    <!--<button type="submit" class="btn btn-danger">Delete</button>-->
+                    <button type="submit" class="btn btn-danger">Delete</button>-->
                 </form>
             </td>
         </tr>
