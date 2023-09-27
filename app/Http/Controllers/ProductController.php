@@ -59,6 +59,7 @@ class ProductController extends Controller
      */
     public function edit(Product $product): View
     {
+        dd($product->movimentacao);
         return view('products.edit',compact('product'));
     }
   

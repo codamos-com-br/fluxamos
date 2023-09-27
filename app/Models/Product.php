@@ -10,6 +10,7 @@ class Product extends Model
     use HasFactory;
     protected $fillable = ['name','saldo', 'details'];
 
+    //Varias movimentações pertencem a uma conta
     public function movimentacoes()
     {
         return $this->hasMany(Movimentacao::class, 'movimentacao_id');
