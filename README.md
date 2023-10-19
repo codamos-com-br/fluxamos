@@ -26,10 +26,7 @@ Projeto consiste na agilizade e organização das finanças pessoas, pensando em
 ![GitHub Org's stars](https://img.shields.io/github/stars/Rtheodor?style=social)
 
 # Tecnologias utilizadas
-
-* [Docker](#https://hub.docker.com/)
-
-* [Laravel](#PHP)
-
-* [Mysql](#Mysql)
+- ``Docker``
+- ``Laravel``
+- ``MySQL``
 
