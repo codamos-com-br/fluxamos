@@ -14,9 +14,8 @@ return new class extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->number_format('saldo', 2, ',','.');
-            $table->timestamps('created_at');
-            
+            $table->float('saldo', 10, 2);
+            $table->timestamps();
         });
     }
 
